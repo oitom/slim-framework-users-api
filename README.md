@@ -32,18 +32,17 @@ curl -X GET http://localhost/slim-framework-users-api/pessoas/1
 POST User (Insere um novo usuario)
 ```cURL
 curl -X POST http://localhost/slim-framework-users-api/pessoas/
-  -H 'accept: application/json'
-  -H 'content-type: application/json'
-  -d '{"nome":"Maria","email":"maria@email.com"}'
+	  -H 'accept: application/json'
+	  -H 'content-type: application/json'
+	  -d '{"nome":"Maria","email":"maria@email.com"}'
 
 ```
 PUT User :id (Atualiza um usuário pelo parametro id)
 ```cURL
-curl -X PUT \
-  http://localhost/slim-framework-users-api/pessoas/3
-  -H 'accept: application/json'
-  -H 'content-type: application/json'
-  -d '{"nome":"Maria da Silva","email":"maria@email.com"}'
+curl -X PUT http://localhost/slim-framework-users-api/pessoas/3
+	  -H 'accept: application/json'
+	  -H 'content-type: application/json'
+	  -d '{"nome":"Maria da Silva","email":"maria@email.com"}'
 
 ```
 DELETE User :id (Remove um usuário pelo parametro id)
