@@ -22,43 +22,33 @@ INSERT INTO `pessoa` (`id`, `nome`, `email`, `dt_cadastro`) VALUES
 ## Requets API
 GET All users (Pega todos os usuários)
 ```cURL
-curl -X GET \
-  http://localhost/slim-framework-users-api/pessoas/ \
-  -H 'cache-control: no-cache'
-
+curl -X GET http://localhost/slim-framework-users-api/pessoas/
 ```
 GET User :id (Pega um usuario pelo parâmetro id)
 ```cURL
-curl -X GET \
-  http://localhost/slim-framework-users-api/pessoas/1 \
-  -H 'cache-control: no-cache' 
+curl -X GET http://localhost/slim-framework-users-api/pessoas/1
 
 ```
 POST User (Insere um novo usuario)
 ```cURL
-curl -X POST \
-  http://localhost/slim-framework-users-api/pessoas/ \
-  -H 'accept: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
+curl -X POST http://localhost/slim-framework-users-api/pessoas/
+  -H 'accept: application/json'
+  -H 'content-type: application/json'
   -d '{"nome":"Maria","email":"maria@email.com"}'
 
 ```
 PUT User :id (Atualiza um usuário pelo parametro id)
 ```cURL
 curl -X PUT \
-  http://localhost/slim-framework-users-api/pessoas/3 \
-  -H 'accept: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
+  http://localhost/slim-framework-users-api/pessoas/3
+  -H 'accept: application/json'
+  -H 'content-type: application/json'
   -d '{"nome":"Maria da Silva","email":"maria@email.com"}'
 
 ```
 DELETE User :id (Remove um usuário pelo parametro id)
 ```cURL
-curl -X DELETE \
-  http://localhost/slim-framework-users-api/pessoas/2 \
-  -H 'cache-control: no-cache'
+curl -X DELETE http://localhost/slim-framework-users-api/pessoas/2
 
 ```
 
