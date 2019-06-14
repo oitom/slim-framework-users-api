@@ -20,16 +20,16 @@ INSERT INTO `pessoa` (`id`, `nome`, `email`, `dt_cadastro`) VALUES
 ```
 
 ## Requets API
-GET All users (Pega todos os usuários)
+#### GET All users (Pega todos os usuários)
 ```cURL
 curl -X GET http://localhost/slim-framework-users-api/pessoas/
 ```
-GET User :id (Pega um usuario pelo parâmetro id)
+#### GET User :id (Pega um usuario pelo parâmetro id)
 ```cURL
 curl -X GET http://localhost/slim-framework-users-api/pessoas/1
 
 ```
-POST User (Insere um novo usuario)
+#### POST User (Insere um novo usuario)
 ```cURL
 curl -X POST http://localhost/slim-framework-users-api/pessoas/
 	  -H 'accept: application/json'
@@ -37,7 +37,7 @@ curl -X POST http://localhost/slim-framework-users-api/pessoas/
 	  -d '{"nome":"Maria","email":"maria@email.com"}'
 
 ```
-PUT User :id (Atualiza um usuário pelo parametro id)
+#### PUT User :id (Atualiza um usuário pelo parametro id)
 ```cURL
 curl -X PUT http://localhost/slim-framework-users-api/pessoas/3
 	  -H 'accept: application/json'
@@ -45,13 +45,13 @@ curl -X PUT http://localhost/slim-framework-users-api/pessoas/3
 	  -d '{"nome":"Maria da Silva","email":"maria@email.com"}'
 
 ```
-DELETE User :id (Remove um usuário pelo parametro id)
+#### DELETE User :id (Remove um usuário pelo parametro id)
 ```cURL
 curl -X DELETE http://localhost/slim-framework-users-api/pessoas/2
 
 ```
 
-## Postman 
+### Postman 
 [Link Collection](https://www.getpostman.com/collections/67d4d7a4856d68b3c29d)
 
-#### [Fonte: clubedosgeeks - tutorial](http://clubedosgeeks.com.br/programacao/php/api-restful-com-php-e-slim-framework)
+### [Fonte: clubedosgeeks - tutorial](http://clubedosgeeks.com.br/programacao/php/api-restful-com-php-e-slim-framework)
